@@ -2,12 +2,10 @@ import { TestScheduler } from 'jest';
 import {Calculator} from './../src/calculator.js';
 describe ('Calculator', () => {
   let reusableCalculator;
-
   beforeEach(() => {
-    reusableCalculator = new Calculator('a', 'b', 'c', 'd');
+    reusableCalculator = new Calculator('a','b');
   });
-
-  test('should create a calculator object', ( ) => {
-    expect (reusableCalculator.Mercury).toEqual('a')
+test('should create a calculator object', ( ) => {
+    expect (reusableCalculator.age).toEqual('a', 'b')
   });
 });
