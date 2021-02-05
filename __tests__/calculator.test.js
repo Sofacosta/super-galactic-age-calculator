@@ -10,6 +10,6 @@ describe ('Calculator', () => {
     });
 
     test('should create a planet calculator', () => {
-      expect(reusableCalculator.planetCalculator()).toEqual({ mercury: (32 / 6), venus: (32 / .64), mars: (32 / 1.88), jupiter: (32 / 11.86) });
+      expect(reusableCalculator.planetCalculator()).toEqual({ mercury: (32 / .24), venus: (32 / .64), mars: (32 / 1.88), jupiter: (32 / 11.86) });
   });
 });
