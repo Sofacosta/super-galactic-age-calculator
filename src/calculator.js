@@ -9,9 +9,14 @@ export class Calculator {
     const mars = 1.88
     const jupiter = 11.86
 
-    let planetAgeArray = [(this.age / mercury), (this.age / venus), (this.age / mars), (this.age / jupiter)];
-    console.log(planetAgeArray);
-    return planetAgeArray;
+    let planetAge = {
+      mercury: (this.age / mercury),
+      venus: (this.age / venus),
+      mars: (this.age / mars),
+      jupiter: (this.age / jupiter)
+    };
+    console.log(planetAge);
+    return planetAge;
   }
 }
 // with number inputted from User
