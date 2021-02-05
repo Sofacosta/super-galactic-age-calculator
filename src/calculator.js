@@ -1,17 +1,18 @@
 export class Calculator {
-  constructor(age,expectency) {
+  constructor(age, expectancy) {
     this.age = age;
-    this.expectency = expectency;
+    this.expectency = expectancy;
   }
+  planetCalculator() {
+    const mercury = .24
+    const venus = .64
+    const mars = 1.88
+    const jupiter = 11.86
 
-  //planetCalculator () {
-    //let mercury = .24
-    //console.log(mercury);
-    //let venus = .64
-    //let mars = 1.88
-    //let jupiter = 11.86
-    //if this.age 
-  //}
+    let planetAgeArray = [(this.age / mercury), (this.age / venus), (this.age / mars), (this.age / jupiter)];
+    console.log(planetAgeArray);
+    return planetAgeArray;
+  }
 }
 // with number inputted from User
 // a) ageinputted /.24
