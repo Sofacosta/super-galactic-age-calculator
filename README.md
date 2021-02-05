@@ -18,7 +18,7 @@ Expect(beepBoop(08234)).toEqual(["08234"]);
 * Jest 
 * Webpack
 ## Set up / Installation requirements
-* Download a .zip copy of this repository:LINK TO GITHUB by clicking the green "code" button. 
+* Download a .zip copy of this repository:https://github.com/Sofacosta/super-galactic-age-calculator.git by clicking the green "code" button. 
 * Launch the index.html file into your browser
  
 OR
@@ -31,6 +31,8 @@ OR
 * No known bugs
 ## Notes
 * I got confused on how to connect my local project folder into the Github Template repository. It took me a while to set up the project at the beginning but I found that in order to connect your local project folder to the most recent code from Github project the command is: [git pull](https://git-scm.com/docs/git-pull) 
+* I got the same error than the beginning to the week were I hit npm install and Webpack keeps installing another version: webpack@5.20.2. The sollution that helped me was to uninstall webpack and install again: 
+npm install webpack@4.39.3 --save-dev --save-exact
 
 ## License
 * [MIT](https://choosealicense.com/licenses/mit)
