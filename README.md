@@ -1,5 +1,5 @@
 # Super Galactic Age Calculator
-#### Independent project #3 for Epicodus
+#### Independent project #5 for Epicodus
 #### Project initiated: 02-5-2021
 #### By Sofia Acosta
 ## Project Description
@@ -7,9 +7,7 @@ This is my indepentent project from week 5 to showcase the lesson learned last w
 ## Specs
  
 ```
-Describe: beepBop()
-Test: "It should return an array of numbers inputted by the user including the number 0"
-Expect(beepBoop(08234)).toEqual(["08234"]);
+Specs and tests available in tests.  
  ```
  
 ## Technologies Used
