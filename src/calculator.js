@@ -2,6 +2,8 @@ export class Calculator {
   constructor(age, expectancy) {
     this.age = age;
     this.expectency = expectancy;
+    this.planetAge = this.planetAgeCalculator();
+    this.planetExpectancy = this.planetExpectancyCalculator(this.planetAgeCalculator());
   }
   planetAgeCalculator() {
     const mercury = .24;
@@ -30,11 +32,10 @@ export class Calculator {
     return planetExpectancy;
   }
 }
-
-// const calculator = new Calculator(age, expectancy);
-// const planetAge = calculator.planetAgeCalculator();
-//const planetExpectancy = calculator.planetExpectancyCalculator(planetAge);
-
+const calculator = new Calculator(age, expectancy);
+const planetAge = calculator.planetAgeCalculator();
+const planetExpectancy = (planetAge) => calculator.planetExpectancyCalculator(planetAge);
+planetExpectancy(planetAge);
 
 
 // with number inputted from User

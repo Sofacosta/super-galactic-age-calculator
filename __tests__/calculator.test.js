@@ -1,10 +1,7 @@
 import { Calculator } from './../src/calculator.js';
 describe ('Calculator', () => {
-  let reusableCalculator;
+  const reusableCalculator = new Calculator(32, 78);
   
-  beforeEach(() => {
-    reusableCalculator = new Calculator(32, 78);
-  });
   test('should create a calculator object', () => {
     expect(reusableCalculator.age).toEqual(32);
   });
@@ -14,7 +11,7 @@ describe ('Calculator', () => {
   });
 
   test('should calculate life expectancy in each planet', () => {
-    const planetAge = reusableCalculator.planetAgeCalculator();
+    const planetAge = reusableCalculator.planetAge;
     expect(reusableCalculator.planetExpectancyCalculator(planetAge)).toEqual({ mercury: 78 - planetAge.mercury, venus: 78 - planetAge.venus, mars: 78 - planetAge.mars, jupiter: 78 - planetAge.jupiter});
   });
 
