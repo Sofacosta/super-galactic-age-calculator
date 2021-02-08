@@ -32,10 +32,17 @@ export class Calculator {
     return planetExpectancy;
   }
 }
+
+const age = 34;
+const expectancy = 80;
 const calculator = new Calculator(age, expectancy);
 const planetAge = calculator.planetAgeCalculator();
 const planetExpectancy = (planetAge) => calculator.planetExpectancyCalculator(planetAge);
+
 planetExpectancy(planetAge);
+
+
+
 
 
 // with number inputted from User
